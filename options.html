@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ADSHIELD-X Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label,
+        input,
+        button {
+            font-size: 1rem;
+        }
+
+        .rule-list {
+            margin-top: 1em;
+        }
+
+        .rule-item {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Custom Ad Blocking Rules</h2>
+    <form id="addRuleForm">
+        <label for="urlFilter">URL Filter:</label>
+        <input type="text" id="urlFilter" required placeholder="e.g. *example.com*">
+        <button type="submit">Add Rule</button>
+    </form>
+    <div class="rule-list">
+        <h3>Current Rules</h3>
+        <ul id="rules"></ul>
+    </div>
+
+    <hr>
+    <h2>Whitelist (Allowlist) Domains</h2>
+    <form id="addWhitelistForm">
+        <label for="whitelistDomain">Domain:</label>
+        <input type="text" id="whitelistDomain" required placeholder="e.g. example.com">
+        <button type="submit">Add to Whitelist</button>
+    </form>
+    <ul id="whitelist"></ul>
+
+    <script src="options.js"></script>
+    <script src="whitelist.js"></script>
+</body>
+
+</html>

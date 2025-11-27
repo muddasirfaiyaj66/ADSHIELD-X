@@ -7,6 +7,8 @@ ADSHIELD-X is a Chrome extension that blocks YouTube ads and general website ads
 - Blocks ad requests from major ad networks (Google, YouTube, DoubleClick, etc.)
 - Removes YouTube ad elements and auto-skips video ads
 - Uses Chrome's Declarative Net Request API for efficient blocking
+- Custom rules and per-site allowlisting from the Options page
+- Popup toggle to instantly enable/disable blocking without reloading the extension
 
 ## Installation
 
@@ -14,6 +16,13 @@ ADSHIELD-X is a Chrome extension that blocks YouTube ads and general website ads
 2. Go to `chrome://extensions/` in your Chrome browser.
 3. Enable "Developer mode" (top right).
 4. Click "Load unpacked" and select the `adshield-x` folder.
+
+## Usage
+
+- Click the toolbar icon to quickly toggle blocking on or off.
+- Use **Options → Custom Rules** to add your own URL filter patterns (`*example.com/ads*`).
+- Use **Options → Whitelist** to allowlist domains that should be ignored by the blocker.
+- Rules and whitelist entries sync via your Chrome profile.
 
 ## Publishing
 
